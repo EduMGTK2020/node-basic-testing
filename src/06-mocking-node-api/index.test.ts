@@ -48,10 +48,10 @@ describe('doStuffByInterval', () => {
     const callBackFuction = jest.fn();
 
     doStuffByInterval(callBackFuction, 1000);
-    expect(spySetInterval).toHaveBeenCalledTimes(1);
+    expect(spySetInterval).toBeCalledTimes(1);
 
     jest.runOnlyPendingTimers();
-    expect(callBackFuction).toHaveBeenCalledTimes(1);
+    expect(callBackFuction).toBeCalledTimes(1);
   });
 
   test('should call callback multiple times after multiple intervals', () => {
@@ -61,7 +61,7 @@ describe('doStuffByInterval', () => {
     expect(callBackFuction).not.toBeCalled();
 
     jest.advanceTimersByTime(3500);
-    expect(callBackFuction).toHaveBeenCalledTimes(3);
+    expect(callBackFuction).toBeCalledTimes(3);
   });
 });
 
