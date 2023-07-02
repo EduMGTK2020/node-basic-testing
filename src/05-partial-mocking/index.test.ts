@@ -26,9 +26,7 @@ describe('partial mocking', () => {
   });
 
   test('unmockedFunction should log into console', () => {
-    const consoleLog = jest
-      .spyOn(console, 'log')
-      .mockImplementation(() => jest.fn());
+    const consoleLog = jest.spyOn(console, 'log');
     unmockedFunction();
     expect(consoleLog).toBeCalled();
   });
