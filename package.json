@@ -12,7 +12,6 @@
     "lint": "eslint \"src/**/*.ts\" --fix",
     "test": "jest --silent",
     "test:verbose": "jest",
-    "test:coverage": "jest --coverage",
     "build": "tsc"
   },
   "devDependencies": {
