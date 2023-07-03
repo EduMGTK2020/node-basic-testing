@@ -1,6 +1,6 @@
 # Basic testing
 
-⚠️ DO NOT SUBMIT PULL REQUESTS TO THIS REPO ⚠️
+⚠️ DO NOT SUBMIT PULL REQUESTS TO THIS REPO ⚠️ change for submit to RSS App
 
 ---
 
